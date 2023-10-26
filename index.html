@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de codigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="containerButtons">
+            <button class="button" id="btnRun">Run ></button>
+            <button class="button" id="btnClear">Clear</button>
+            <a href="https://www.w3schools.com/html/default.asp" class="anchor">W3schools</a>
+        </div>
+
+
+        <div class="containerDates">
+            <textarea class="editorCode" id="codeEntered" placeholder="Write your code here..."></textarea>
+
+            <iframe class="renderCode" id="renderedCode" srcdoc=""></iframe>
+        </div>
+
+    </main>
+
+    <!-- usamos este script para cargar y utilizar la biblioteca -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
