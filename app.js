@@ -22,19 +22,10 @@ function executeCode() {
     }
 }
 
+// Funcion para limpia el editor y el documento
 function clearDocument() {
-    // Se validan campos vacios
-    if (codeEntered.value === "") {
-        Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'No hay codigo para limpiar'
-        });
-        // De lo contrario se limpiara tanto el editor como la parte del renderizado
-    } else {
         codeEntered.value = ''
         renderedCode.srcdoc = ""
-    }
 }
 
 // Funcion que se encarga de tomar el valor de entrada en el editor y lo representa como contenido HTML
